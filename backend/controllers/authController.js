@@ -17,7 +17,7 @@ export const register = async (req, res) => {
 
     const user = await inMemoryStore.createUser({ name, email, password });
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
-    return res.json({ token, user });
+    return res.json({ token });
   }
 
   const userExists = await User.findOne({ email });
@@ -29,7 +29,7 @@ export const register = async (req, res) => {
 
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
 
-  res.json({ token, user });
+  res.json({ token });
 };
 
 export const login = async (req, res) => {
@@ -49,7 +49,7 @@ export const login = async (req, res) => {
       return res.status(400).json({ message: "Invalid credentials" });
 
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
-    return res.json({ token, user });
+    return res.json({ token });
   }
 
   const user = await User.findOne({ email });
@@ -60,5 +60,5 @@ export const login = async (req, res) => {
 
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
 
-  res.json({ token, user });
+  res.json({ token });
 };
