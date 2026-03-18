@@ -37,45 +37,45 @@ A full-stack web application that helps users discover suitable career paths bas
 Career App/
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   ├── components/
-│   │   ├── context/AuthContext.tsx
-│   │   ├── services/api.ts
-│   │   ├── App.tsx
-│   │   └── main.tsx
-│   │
-│   ├── index.html
-│   ├── vite.config.ts
-│   └── package.json
+│ ├── src/
+│ │ ├── pages/
+│ │ ├── components/
+│ │ ├── context/AuthContext.tsx
+│ │ ├── services/api.ts
+│ │ ├── App.tsx
+│ │ └── main.tsx
+│ │
+│ ├── index.html
+│ ├── vite.config.ts
+│ └── package.json
 │
 ├── backend/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   ├── assessmentController.js
-│   │   ├── authController.js
-│   │   └── profileController.js
-│   ├── middleware/
-│   │   └── authMiddleware.js
-│   ├── models/
-│   │   ├── AssessmentAttempt.js
-│   │   ├── AssessmentQuestion.js
-│   │   ├── Profile.js
-│   │   ├── Question.js
-│   │   ├── Result.js
-│   │   └── User.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── assessmentRoutes.js
-│   │   └── profileRoutes.js
-│   ├── utils/
-│   │   ├── careerEngine.js
-│   │   ├── inMemoryStore.js
-│   │   └── isDbReady.js
-│   │   └── scoring.js
-│   ├── server.js
-│   └── package.json
+│ ├── config/
+│ │ └── db.js
+│ ├── controllers/
+│ │ ├── assessmentController.js
+│ │ ├── authController.js
+│ │ └── profileController.js
+│ ├── middleware/
+│ │ └── authMiddleware.js
+│ ├── models/
+│ │ ├── AssessmentAttempt.js
+│ │ ├── AssessmentQuestion.js
+│ │ ├── Profile.js
+│ │ ├── Question.js
+│ │ ├── Result.js
+│ │ └── User.js
+│ ├── routes/
+│ │ ├── authRoutes.js
+│ │ ├── assessmentRoutes.js
+│ │ └── profileRoutes.js
+│ ├── utils/
+│ │ ├── careerEngine.js
+│ │ ├── inMemoryStore.js
+│ │ └── isDbReady.js
+│ │ └── scoring.js
+│ ├── server.js
+│ └── package.json
 
 
 ------------------------------------------------------------------------
